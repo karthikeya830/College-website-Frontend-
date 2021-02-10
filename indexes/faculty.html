@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src='main.js'></script> 
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVRcse_Demo website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Nav Bar section -->
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top" id="app-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" height="5px" class="logo horizontal-logo" src="./images/logo.jpg" alt="forecastr logo">
+              </a>
+            
+            <span id="log" class="text-uppercase font-weight-normal "><a class="head" href="index.html">CVR COLLEGE OF<br>ㅤENGINEERING</a></span>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="navbardrop" data-toggle="dropdown">Infrastructure</a>
+                        <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item" href="what.html">What we have..</a>
+                          <a class="dropdown-item" href="lab.html">Lab</a>
+                          <a class="dropdown-item" href="library.html">Library</a>
+                          <a class="dropdown-item" href="classroom.html">Classrooms</a>
+                          <a class="dropdown-item" href="seminarhall.html">Seminar-Hall</a>
+                        </div>
+                      </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="faculty.html">Faculty</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="studentcorner.html" id="navbardrop" data-toggle="dropdown">
+                          Student Corner</a>
+                        <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item" href="e-sources.html">E-Sources</a>
+                          <a class="dropdown-item" href="studentgallery.html">Student Gallery</a>
+                          <a class="dropdown-item" href="studentwork.html">Student Work</a>
+                        </div>
+                      </li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="research.html" id="navbardrop" data-toggle="dropdown">
+                          Research</a>
+                        <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item" href="conferences.html">Conferences</a>
+                          <a class="dropdown-item" href="workshop.html">Workshops</a>
+                          <a class="dropdown-item" href="tech.html">Technical Seminars</a>
+                          <a class="dropdown-item" href="projects.html">Projects</a>
+                          <a class="dropdown-item" href="fdp.html">FDP's</a>
+                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="navbardrop" data-toggle="dropdown">Academics</a>
+                            <div class="dropdown-menu sm-menu">
+                              <a class="dropdown-item" href="acadcalender.html">Calenders</a>
+                              <a class="dropdown-item" href="syllabus.html">Syllabus Book</a>
+                              <a class="dropdown-item" href="timetable.html">Time Table</a>
+                            </div>
+                          </li>        
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', serif;
+    background: #d0ecf7;
+}
+
+.product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #0e0e0f;
+    overflow: hidden
+}
+
+.specifies {
+    position: absolute;
+    width: 100%;
+    bottom: -380px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .5s
+}
+
+.product:hover .specifies {
+    bottom: 0
+}
+
+.specifies h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    width: 100%
+}
+
+.specifies h2 span {
+    font-size: 15px;
+    color: #ccc;
+    font-weight: bold
+}
+#a1 {
+    padding-right: 20px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+    <!--Meet  the Faculty-->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Meet The Faculty</h1>
+        </div>
+        <hr>
+    </div>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+
+
+
+
+    <!--  Cards -->
+    <div class="row">
+        <div id="a1" class="col-md-3 col-sm-6">
+            <div class=" product">
+                <div class="imgbox col-lg-4 col-md-4"> <img height="320px" width="270px" src="./images/cvrlogo.jpg"> </div>
+                <div class="specifies">
+                    <h2>Dr.K.V. Chalapati Rao<br> <span>Professor Emiritus</span></h2><br><br><br>
+                    <p>Completed Ph.D. from Calculatta University. He served as Professor and Dean CSE at Osmania University till 2005. He has 30+ publications to his credit in national and international journals. 7 students obtained their Ph.D. under his supervision and 3 more are currently pursuing and are about to submit the thesis. His areas of interests include Software Engineering, Design Patterns. He acted as consultant for AP Police on their eCOP Project. He was an expert member for NRSA, etc.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3">
+            <div class="product">
+                <div class="imgbox col-lg-4 col-md-4"> <img height="320px" width="270px" src="./images/profsiva.jpg"> </div>
+                <div class="specifies">
+                    <h2>Prof. L.C. Siva Reddy<br> <span>Prof. & Vice Principal</span></h2><br><br><br><br>
+                    <p>Completed his M.Sc. in Physics, M.Phil. in Computational Techniques from University of Hyderabad. Earlier he was HOD of Department of CSE at Osmania University, Hyderabad. He was responsible for developing software for entrance tests, result processing of LAWCET, MBACET, MCACET, EAMCET - 85 and 89. Served as Chairman, Board of Studies, Osmania University, Hyderabad. He joined CVRCE during 2001 and is Vice Principal of the College.</p>                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3">
+            <div class="product ">
+                <div class="imgbox col-lg-4 col-md-4"> <img height="320px" width="270px" src="./images/Dr N V Rao.jpg"> </div>
+                <div class="specifies">
+                    <h2>Dr.N.V.Rao  <span> <br>Professor & Dean Academics</span> </h2><br><br<br><br><br><br><br>
+                    <p>Completed M.Tech from Osmania University and Obtained Ph.D. from JNTU Hyderabad. He served as Scientist G at DRDO. He is a life senior member of IEEE, past Chairman for IEEE Hyderabad section. He has more than 30 publications and technical papers in his credit. His areas of interest are Image Processing, Data Mining. Computer Networks. Presently serving as Dean, Academics at CVR.</p>                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-md-4">
+            <div class="product ">
+                <div class="imgbox col-lg-4"> <img height="320px" width="270px" src="./images/Dr. K Venkateswara Rao.jpg"> </div>
+                <div class="specifies">
+                    <h2>Dr.K.Venkateswara Rao<span> <br>Professor & Head</span> </h2><br><br<br><br>
+                    <p>Completed Ph.D (CSE) from Jawaharlal Nehru Technological University, Hyderabad in 2015. At ISRO, he made a significant contribution to the Development and Operationalization of Spacecraft Health Monitoring, Analysis and Control Software (SCHEMACS) for IRS-1D and IRS-P4 Missions. At Wipro, he was involved in porting of NCR Teradata DBS onto 64-bit Sun Sparc System and went twice to Sweden for six months to outsource some of the Software Engineering Tools of Ericssion to Wipro Technologies.</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+    <!--  Cards -->
+    <div class="row">
+        <div id="a1" class="col-md-3 col-sm-6">
+            <div class=" product">
+                <div class="imgbox col-lg-4 col-md-4"> <img height="320px" width="270px" src="./images/selva kumar.jpg"> </div>
+                <div class="specifies">
+                    <h2>Dr.Selvakumar R.K.<br> <span>Professor</span></h2><br><br><br><br>
+                    <p>Graduated in Mathematics from Madurai Kamaraj University in 1985 and obtained his M.Sc. in Mathematics from Madurai Kamaraj University in 1987. He has also received an equivalent M.Tech. in Computer Technology through DOEACC-C Level from DIT, Govt. of India in 2002. He has a Ph.D. in Computer Science & Engineering from the CITE, Manonmaniam Sundaranar University, Tamilnadu, India in 2009.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3">
+            <div class="product">
+                <div class="imgbox col-lg-4 col-md-4"> <img height="320px" width="270px" src="./images/Dr. K Narender Reddy.jpg"> </div>
+                <div class="specifies">
+                    <h2>Dr.K.Narendar Reddy<br> <span>Professor & Associate Dean Student Affairs</span></h2><br>
+                    <p>Dr.K.Narendar Reddy had obtained AMIE (Computer Engineering) degree from Institution of Engineers, M.Tech. in Computer Science & Engineering from JNTUA, Anatapur. He had obtained another M.Tech. in Mining Engineering with specialization in Mine Planning , from IT BHU (now it is known as IIT BHU). Prior to his career in academics, he had served as Scientist at National Institute of Rock Mechanics (NIRM), Central Government R&D Unit under Ministry of Mines & Minerals, for more than 10 years.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3">
+            <div class="product ">
+                <div class="imgbox col-lg-4 col-md-4"> <img height="320px" width="270px" src="./images/Dr. Vani Vathsala.jpg"> </div>
+                <div class="specifies">
+                    <h2>Dr.A.Vani Vathsala<span> <br>Professor</span> </h2><br><br<br><br><br>
+                    <p>Completed Ph.D (CS) from University of Hyderabad in 2016 and After completing B.Tech in 1996, she worked for Tata Consultancy Services, Hyderabad for around 4 years as Team lead . Her areas of interest include Web Services, and Compiler Design. She has authored more than 10 research papers out of which 5 papers are DBLP and have around 40 citations. She is currently serving as CSI Student Branch Counsellor, IQAC Coordinator for CSE Dept.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-md-4">
+            <div class="product ">
+                <div class="imgbox col-lg-4"> <img height="320px" width="270px" src="./images/durga bhavani.jpg"> </div>
+                <div class="specifies">
+                    <h2>Dr.D.Durga Bhavani<span> <br>Professor</span> </h2><br><br<br><br>
+                    <p>Dr. D. Durga Bhavani, Professor, Department of CSE, CVR College of Engineering, obtained her B.E (CSE) from Gulbarga University, M.Tech (WT) from JNTU Hyderabad and Ph.D.(CSE) in the field of Data Mining from Acharya University, Guntur, Andhra Pradesh state. She has over 25 years of teaching experience for UG/PG students and has guided several B. Tech., M. Tech Projects. She is the life member of CSI, and IAENG . She is Editorial Board Member and Reviewer of many National/International Journals.</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <!--  Cards -->
+        <div class="row">
+            <div id="a1" class="col-md-3 col-sm-6">
+                <div class=" product">
+                    <div class="imgbox col-lg-4 col-md-4"> <img height="320px" width="270px" src="./images/Dr. M. Raghava.jpg"> </div>
+                    <div class="specifies">
+                        <h2> Dr.Raghava M <br> <span>Professor</span></h2><br><br>
+                        <p>Completed Ph.D from University of Hyderabad and M.Tech from University of Mysore .Having 16+ years of experience as an accomplioshed teacher in various positions .His research areas includes Computer Vision, Sparse Representation .Predictive Analytics, Semantic Query, and Distributed Systems.He has published 11 Research Articles in International Conferences and participated in 16 Conferences .He has guided 11 M.Tech projects and over 25 B.Tech projects.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3">
+                <div class="product">
+                    <div class="imgbox col-lg-4 col-md-4"> <img height="320px" width="270px" src="./images/Dr. Subhash Chandra.jpg"> </div>
+                    <div class="specifies">
+                        <h2>Dr.N.Subhash Chandra<br> <span>Professor</span></h2><br><br><br>
+                        <p>Completed his AMIE, received the master’s degree in CSE from the School of Information Technology, JNTU. He started his carrier as Asst Professor and Principal at JNTUH . During his academic career of more than 20 years until now, he taught various subjects at UG/PG level and has authored a book. He has organized 5 National/International conferences and 03 short term course/workshops. His research interests include Image Processing, Data Mining, and Cloud Computing.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3">
+                <div class="product ">
+                    <div class="imgbox col-lg-4 col-md-4"> <img height="320px" width="270px" src="./images/ponnu swamy.jpg"> </div>
+                    <div class="specifies">
+                        <h2>Dr.R.Ponnusamy<span> Professor<br></span> </h2><br><br<br><br><br>
+                        <p>Graduated in Computer Science from A.V.C.College(Autonomous) in 1994 and obtained his M.Sc. in Computer Science from the same institution in 1996. He has also  Professor in the Department of Computer Science and Engineering at CVRCE, nd Higher Education. He has authored and co-authored more than 90 papers in various international conference and journals. He has guided 5 scholars and guiding 6 research scholars for Ph.D. He has been awarded Young Scientist Fellowship Award by the Tamilnadu State .</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-4">
+                <div class="product ">
+                    <div class="imgbox col-lg-4"> <img height="320px" width="270px" src="./images/yusuf mulge.jpg"> </div>
+                    <div class="specifies">
+                        <h2>Dr.Md.Yusuf Mulge<span> <br>Professor</span> </h2><br><br<br><br><br><BR>
+                        <p>Completed Ph.D. from University of Mysore, Mysore in Computer Science and ME from Thapar Institute of Engineering & Technology, Punjab. Having 32 Years of teaching experience in various engineering colleges under different levels,ions and 5 Conference Publications under his name. Guiding candidates to complete their PhD. 2 candidates submitted thesis under his guidance to Pacific University, Udaipur, Rajasthan.</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+</body>
+</html>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--Footer-->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <br>
+                <h5>Contact</h5>
+                <hr id="liner" class="light">
+                <p>555-555-5555</p>
+                <p>email@gmail.com</p>
+                <p>Vastunagar, Mangalpalli (V),</p>
+                <p>Ibrahimpatnam (M), Rangareddy (D),</p>
+                <p>Telangana 501 510</p>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <h5>Quick Links</h5>
+                <hr id="liner" class="light">
+                <p><a href="acadcalender.html">Academic Calenders</a></p>
+                <p><a href="e-sources.html">E-Resources</a></p>
+                <p><a href="studentgallery.html">Gallery</a></p>
+                <a href="timetable.html">Timetables</a>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <h5>Coding Arenas</h5>
+                <hr id="liner" class="light">
+                <p><a href="https://www.hackerrank.com/">Hacker Rank</a></p>
+                <p><a href="https://www.codechef.com/">Code Chef</a></p>
+                <p><a href="https://codeforces.com/">Code Forces</a></p>
+                <a href="https://www.interviewbit.com/">Interviewbit</a>
+            </div>
+            <div class="col-12">
+                <hr id="liner" class="light">
+                <h5>Main website : <a href="http://cvr.ac.in/home4/">click here</a></h5>
+            </div>
+            <div class="col-12">
+                <hr id="liner" class="light">
+                <h5>&copy; Demowebsite.com</h5>
+            </div>
+        </div>
+    </div>
+    </footer>

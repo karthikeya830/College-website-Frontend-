@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src='main.js'></script> 
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVRcse_Demo website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Nav Bar section -->
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top" id="app-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" height="5px" class="logo horizontal-logo" src="./images/logo.jpg" alt="forecastr logo">
+              </a>
+            
+            <span id="log" class="text-uppercase font-weight-normal "><a class="head" href="index.html">CVR COLLEGE OF<br>ㅤENGINEERING</a></span>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="navbardrop" data-toggle="dropdown">Infrastructure</a>
+                        <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item" href="what.html">What we have..</a>
+                          <a class="dropdown-item" href="lab.html">Lab</a>
+                          <a class="dropdown-item" href="library.html">Library</a>
+                          <a class="dropdown-item" href="classroom.html">Classrooms</a>
+                          <a class="dropdown-item" href="seminarhall.html">Seminar-Hall</a>
+                        </div>
+                      </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="faculty.html">Faculty</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="studentcorner.html" id="navbardrop" data-toggle="dropdown">
+                          Student Corner</a>
+                        <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item" href="e-sources.html">E-Sources</a>
+                          <a class="dropdown-item" href="studentgallery.html">Student Gallery</a>
+                          <a class="dropdown-item" href="studentwork.html">Student Work</a>
+                        </div>
+                      </li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="research.html" id="navbardrop" data-toggle="dropdown">
+                          Research</a>
+                        <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item" href="conferences.html">Conferences</a>
+                          <a class="dropdown-item" href="workshop.html">Workshops</a>
+                          <a class="dropdown-item" href="tech.html">Technical Seminars</a>
+                          <a class="dropdown-item" href="projects.html">Projects</a>
+                          <a class="dropdown-item" href="fdp.html">FDP's</a>
+                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="navbardrop" data-toggle="dropdown">Academics</a>
+                            <div class="dropdown-menu sm-menu">
+                              <a class="dropdown-item" href="acadcalender.html">Calenders</a>
+                              <a class="dropdown-item" href="syllabus.html">Syllabus Book</a>
+                              <a class="dropdown-item" href="timetable.html">Time Table</a>
+                            </div>
+                          </li>        
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--Image Slider section-->
+    
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img id="s1" width="100%" height="600px" src="images/slider-3.jpg" >
+                <div class="carousel-caption">
+                    <h1 class="display-1 font-weight-normal">Department of Computer Science </h1> 
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img id="s2" width="100%" height="600px" src="./images/applelab.jpg">
+                <div class="carousel-caption">
+                    <h1 id="fac" class="display-2 text-left "  >Apple Lab</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img id="s3" width="80%" height="600px" src="images/slider-2.jpg">
+                <div class="carousel-caption">
+                    <h1 id="fac" class="display-2 text-left">Faculty</h1>
+                </div>
+            </div>
+            
+    </div>
+    </div>
+    
+
+
+<!--headline section-->
+
+
+
+<div class="container-fluid padding">  
+    <br>    
+        <div class="row padding">
+            <div class=" col-lg-6">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-between align-items-center breaking-news bg-dark">
+                                <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news"><span class="d-flex align-items-center">&nbsp;Latest News</span></div>
+                                <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" id="new" >Latest news will appear here.... </marquee>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            
+            <div class="container mt-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between align-items-center breaking-news bg-dark">
+                            <div  class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news"><span class="d-flex align-items-center">&nbsp;Latest links</span></div>
+                            <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> <a href="#"></a> <span class="dot"></span> <a href="#"> Latest links will appear here.... </a> <span class="dot"></span> <a href="#"></a> </marquee>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        
+            <div class="col-lg-6">
+                <div class="container mt-5">
+                    <div class="d-flex justify-content-between align-items-center breaking-news bg-dark">
+                        <div id="imp" class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news"><span class="d-flex align-items-center">&nbsp;Important Links</span>
+                        </div>
+                        <div class="row-lg-3">
+                        <h6 class="hea"><a href="#">Important links will appear here</a></h6>
+                        </div>
+                    </div>
+                </div>
+           </div>
+    </div>
+   </div> 
+
+<br>
+
+<!--Vision section -->
+
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-xl-12">
+            <h1 class="text-center">VISION</h1>
+            <hr>
+            <ul class="lead">
+                <li>Towards a Global Knowledge Hub, striving continuously in pursuit of excellence in Education, Research, Consultancy and Technological services to the society.</li>
+            </ul>
+            <br>
+            <h1 class="text-center">MISSION</h1>
+            <hr>
+            <ul class="lead">
+                <li>M1: To produce the best quality Computer Science professionals by imparting quality training, hands on experience and value education.</li>
+                <li>M1: To strengthen links with industry through partnerships and collaborative developmental works.</li>
+                <li>M3: To attain self-sustainability and overall development through Research, Consultancy and Development activities.</li>
+                <li>M4: To extend technical expertise to other technical institutions of the region and play a lead role in imparting technical education.</li>
+                <li>M5: To inculcate work ethics and commitment in students for their future endeavors to serve the society.</li>
+            </ul>
+        </div>
+    </div>
+</div>   
+
+
+
+<!--HOD Message Section-->
+<div class="container-fluid padding">
+<br>    
+<br>    
+<br>    
+<br>    
+    <div class="row padding">
+        <div class=" col-lg-6">
+            <h2>Message by HOD</h2>
+            <p>The Computer Science and Engineering department was started in the year 2001 with an intake of 60 B.Tech. students. The current B.Tech. intake is 300. The department also offers M.Tech. in CSE (with an intake of 18) and M.Tech. in AI (Artificial Intelligence) with an intake of 18. The department was accredited by the National Board of Accreditation (NBA) of All India Council for Technical Education (AICTE) in the year 2007 and 2012.</p>
+            <p>The faculty in the department consists of fifteen Professors, sixteen Associate Professors and twenty nine Assistant Professors. The department has expertise in the areas of Cloud computing, Secure Computing, Software Engineering, Image Processing, Data Mining, Mobile Computing, and Parallel Programming.</p>
+            <p>Major achievements by students of this department include the award of 3 Gold Medals by JNTUH to Mr. Harsh H. Shah, during 2008-09 (for outstanding academic performance among all affiliated colleges).</p>
+            <p>The department has set up 1 research lab for encouraging research activity. The department is equipped with licensed software like Rational Rose, Oracle 11g, the latest Microsoft software through an MSDN subscription, as well as a Digital Library. Along with Windows and Linux, various advanced operating systems (Windows Server, MacOS, VMWare) are available in the labs. Labs are also equipped with the latest IBM/HP/Apple servers. Students also have access to devices like tablets (iOS, Android) for doing projects.</p>
+        </div>
+        <div class="col-lg-6">
+            <img id="hod" src="./images/HOD.png" class="image-fluid">
+        </div>
+    </div>
+</div>
+
+
+
+<!--Faculty
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4" > Faculty </h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p class="lead">we have the best faculty out there </p>
+        </div>
+    </div>
+</div>     -->
+
+
+
+<!--Social Media Handles-->
+<div class="container-fluid padding">
+    <br>
+    <br>
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h1>Our Social Media Handles</h1>
+        </div>
+        <hr>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/cvrcoenews"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/cvr_community/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCDUYacCAcOtAdyAKVcJrlxg"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Footer-->
+<footer>
+<div class="container-fluid padding">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <br>
+            <h5>Contact</h5>
+            <hr id="liner" class="light">
+            <p>555-555-5555</p>
+            <p>email@gmail.com</p>
+            <p>Vastunagar, Mangalpalli (V),</p>
+            <p>Ibrahimpatnam (M), Rangareddy (D),</p>
+            <p>Telangana 501 510</p>
+        </div>
+        <div class="col-md-4">
+            <br>
+            <h5>Quick Links</h5>
+            <hr id="liner" class="light">
+            <p><a href="acadcalender.html">Academic Calenders</a></p>
+            <p><a href="e-sources.html">E-Resources</a></p>
+            <p><a href="studentgallery.html">Gallery</a></p>
+            <a href="timetable.html">Timetables</a>
+        </div>
+        <div class="col-md-4">
+            <br>
+            <h5>Coding Arenas</h5>
+            <hr id="liner" class="light">
+            <p><a href="https://www.hackerrank.com/">Hacker Rank</a></p>
+            <p><a href="https://www.codechef.com/">Code Chef</a></p>
+            <p><a href="https://codeforces.com/">Code Forces</a></p>
+            <a href="https://www.interviewbit.com/">Interviewbit</a>
+        </div>
+        <div class="col-12">
+            <hr id="liner" class="light">
+            <h5>Main website : <a href="http://cvr.ac.in/home4/">click here</a></h5>
+        </div>
+        <div class="col-12">
+            <hr id="liner" class="light">
+            <h5>&copy; Demowebsite.com</h5>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+
+</body>
+</html>
+
+
+
